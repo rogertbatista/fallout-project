@@ -82,6 +82,7 @@ main{
 img{
     width: auto;
     margin: auto;
+    width: 300px;
 }
 
 main h2{
