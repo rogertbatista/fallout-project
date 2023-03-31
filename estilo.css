@@ -5,11 +5,14 @@
     src: url('Overseer.otf') format('opentype');
 }
 
-
-
 :root{
     --cor01: #497AB5;
     --cor02: #E7DC97;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
@@ -19,11 +22,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-*{
-    margin: 0px;
-    padding: 0px;
 }
 
 header{
@@ -67,12 +65,6 @@ nav > a:hover{
     transition-duration: 0.5s;
 }
 
-
-.subtitulo{
-    background-color: var(--cor02);
-    padding: 10px;
-}
-
 main{
     min-width: 280px;
     max-width: 800px;
@@ -81,12 +73,6 @@ main{
     border-style:unset;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-}
-
-img{
-    width: auto;
-    margin: auto;
-    width: 300px;
 }
 
 main h2{
@@ -135,40 +121,25 @@ div.video > iframe{
 
 article{
     background-color:white;
+    border-radius: 0px 0px 5px 5px;
+    padding-bottom: 20px;
 }
 
-footer{
-    margin-top: 20px;
-}
-
-footer > p{
-    background-image: linear-gradient(to bottom, #4E6AF5, #112AA8);
-    text-align: center;
+article > h2.subtitulo{
+    background-color: white;
     padding: 10px;
 }
 
-footer a{
-    text-decoration: none;
-    font-family: 'Fallout';
-    font-size: 20px;
-    background-color: var(--cor02);
-    color: black;
-    border-radius: 5px;
-    padding: 5px;
+article h3{
+    margin-top: -15px;
 }
 
-
-.p1{
-    padding-top: 20px ;
+article > p.p1{
+    padding-top: 20px;
+    line-height: 30px;
 }
 
-
-
-abbr{
-    text-decoration: underline;
-}
-
-.paragrafo{
+aside > p.paragrafo{
     background-image: linear-gradient(to bottom, #4E6AF5, #112AA8 );
     font-weight: bold;
     padding: 10px;
@@ -186,6 +157,44 @@ aside a{
     text-decoration: none;
     background-color: #112aa8;
     color: #E7DC97;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+p.p1 > a{
+    text-decoration: none;
+    background-color: #112aa8;
+    color:var(--cor02);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+img{
+    width: auto;
+    margin: auto;
+    width: 300px;
+}
+
+abbr{
+    text-decoration: underline;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+footer > p{
+    background-image: linear-gradient(to bottom, #4E6AF5, #112AA8);
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    font-family: 'Fallout';
+    font-size: 25px;
+    background-color: var(--cor02);
+    color: black;
     border-radius: 5px;
     padding: 5px;
 }
